@@ -1,11 +1,8 @@
-(ns exercise6)
+(ns exercise6
+  (:require [exercise4 :refer :all]))
 
 (defn faverage
   "Calculates the average of a given sequence."
   [x]
-  (throw (Exception. "Not implemented."))
+  (/ (summary x) (summary (map (fn [a] 1) x)))
 )
-
-
-
-
